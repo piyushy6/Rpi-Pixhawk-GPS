@@ -6,9 +6,6 @@ from time import sleep
 
 vehicle= connect('udpin:127.0.0.1:14550', wait_ready=False) ; vehicle.wait_ready(True, timeout=300)
 
-
-
-
 def logfilename():
     now = datetime.datetime.now()
     return 'gps_%0.4d-%0.2d-%0.2d_%0.2d-%0.2d-%0.2d.csv' % \
